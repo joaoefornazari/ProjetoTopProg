@@ -28,16 +28,15 @@ const routes = express.Router(); //crio um negócio que mexe com as rotas (?)
 	return res.json({ message: `Opa ${req.query.name}` });
 });*/
 
-//+routes.post('/products', DevController.store);
+routes.post('/products', ProductController.store);
 
-/*routes.post('/products/:devId/likes', LikeController.store); // importando os controllers*/
-
-/*routes.post('/devs', (req, res) => {
+routes.post('/carrinho', CarrinhoController.store); // importando os controllers
+routes.post('/user', (req, res) => {
 
 	console.log(req.body); //para pegar dados informados pelo Insomnia no corpo JSON
     return res.json({ ok: true });
 
-});*/
+});
 
 //Informações de dados do tipo POST = sempre mande elas pelo corpo do JSON (insomnia)
 //aspas duplas antes de todo texto, e lembre-se de que JSON é tipo um BD
