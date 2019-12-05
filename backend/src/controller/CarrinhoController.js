@@ -15,12 +15,12 @@ module.exports = {
 
         const response = await axios.get(`???`);
 
-        const { carrinhoId, produtos, total_preco, forma_pgto } = response.data;
+        const { carrinhoId, compra, total_preco, forma_pgto } = response.data;
 
         const carrinho = await Carrinho.create({
 
             id: carrinhoId,
-            produtos,
+            compra,
             total_preco,
             forma_pgto,
         });

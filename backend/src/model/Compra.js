@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-const CarrinhoSchema = new Schema({
+const CompraSchema = new Schema({
 
     id:{
 
@@ -8,24 +8,19 @@ const CarrinhoSchema = new Schema({
         required: true,
     },
 
-    compra:{
+    carrinhoId:{
+
+        type: Number,
+        required: true,
+        ref: 'Carrinho',
+    },
+
+    produtos:[{
 
         type: Schema.Types.ObjectId,
-        ref: 'Compra',
+        ref: 'Product',
 
-    },
-
-    total_preco:{
-
-        type: Number,
-        required: true,
-    },
-
-    forma_pgto:{
-
-        type: Number,
-        required: true,
-    }
+    }],
 
 }, {
 
