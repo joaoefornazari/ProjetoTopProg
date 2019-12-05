@@ -24,7 +24,9 @@ Utilizando o ```npm```, as dependências serão instaladas automaticamente.
 
 Para executar o software, digite no terminal:
 
-```d```
+```yarn run```
+
+A partir daí, o sistema funcionará no ```localhost/3333```.
 
 ### Estrutura do BD
 
