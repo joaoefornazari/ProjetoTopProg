@@ -1,6 +1,6 @@
 const express = require('express');
-const DevController = require('./controllers/DevController');
-const LikeController = require('./controllers/LikeController');
+//const DevController = require('./controllers/DevController');
+//const LikeController = require('./controllers/LikeController');
 //importações sempre acima de qualquer outra coisa (costume de #include)
 
 const routes = express.Router(); //crio um negócio que mexe com as rotas (?)
@@ -28,7 +28,7 @@ const routes = express.Router(); //crio um negócio que mexe com as rotas (?)
 	return res.json({ message: `Opa ${req.query.name}` });
 });*/
 
-routes.post('/products', DevController.store);
+//+routes.post('/products', DevController.store);
 
 /*routes.post('/products/:devId/likes', LikeController.store); // importando os controllers*/
 
