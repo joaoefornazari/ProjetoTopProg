@@ -17,7 +17,8 @@ que apontam para o *localhost* na porta *3333*, bem como alguns *scripts* para e
 
 A grosso modo, apenas a arquitetura do banco de dados (backend) está pronta.
 
-Para testá-la (caso dê certo), primeiro deve-se instalar as dependências:
+Para testá-la (caso dê certo), primeiro mude para a pasta *backend* dentro do diretório raiz do projeto.
+Depois, deve-se instalar as dependências:
 
 Utilizando o ```yarn```, instale as dependências:
 
