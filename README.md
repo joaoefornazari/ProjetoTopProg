@@ -22,14 +22,16 @@ Depois, deve-se instalar as dependências:
 
 Utilizando o ```yarn```, instale as dependências:
 
-```yarn add express
-   yarn add mongoose
-   yarn add axios
-   ```
+```
+    yarn add express
+    yarn add mongoose
+    yarn add axios
+    yarn init -y
+```
 
 Para executar o software, digite no terminal:
 
-```yarn run```
+```yarn start```
 
 A partir daí, o sistema funcionará no ```localhost/3333```.
 
