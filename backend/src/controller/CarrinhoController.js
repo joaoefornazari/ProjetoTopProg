@@ -1,5 +1,5 @@
 const axios = require('axios');
-const carrinho = require('../models/Carrinho');
+const carrinho = require('../model/Carrinho');
 
 module.exports = {
 

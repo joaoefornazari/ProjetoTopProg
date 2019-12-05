@@ -1,4 +1,4 @@
-const { Schema, model} = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const CarrinhoSchema = new Schema({
 
@@ -23,7 +23,7 @@ const CarrinhoSchema = new Schema({
 
     forma_pgto:{
 
-        type: Enumerator,
+        type: Number,
         required: true,
     }
 

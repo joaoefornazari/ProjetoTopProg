@@ -23,7 +23,12 @@ server.use(express.json());
 server.use(routes); //use = usando configurações de outro arquivo
 //diretório raiz do nosso servidor
 
-server.listen(3333); 
+server.listen(3333);
+
+if(server.enabled){
+
+    console.log("OK");
+}
 //rota de exibição do servidor no browser. Tipo o endereço de casa, e o browser vai exibir o que tem aí
 
 // dá pra usar qualquer banco de dados no node. Mas o Diego Rocketseat usa MongoDB
